@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+header {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0;
+}
+
+nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/navback.jpg') no-repeat;
+    background-size: cover;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    display: flex;
+    align-items: right;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.nav-left {
+    font-size: 1.5em;
+    padding-top: 20px;
+    color: #fff; /* Text color for the left side of the navbar */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-right: 70px; /* Adjust the right padding as needed */
+    gap: 70px; /* Add gap between items */
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-right a:hover {
+    color: rgb(236, 109, 109);
+}
+
+#hero {
+    position: relative; /* Make it easier to position child elements absolutely */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    background: url('./images/blendback (1).png') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    font-size: 1.5rem;
+    height: 100vh; /* Ensure the hero section takes the full viewport height */
+}
+
+.hero-content {
+    text-align: center; /* Align text to the right */
+    padding-right: 55px;
+    max-width: 50%; /* Limit the width of the content */
+    padding-top: 0px; /* Adjust the padding to move the content higher */
+}
+
+.hero-content h1 {
+    text-shadow: 16px 16px 7px #000;
+}
+
+.herop {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 16px 16px 7px #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#about, #skills, #projects, #contact {
+    background: url('./images/techback.avif') no-repeat center center/cover;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.para {
+    font-size: 1.4rem;
+}
+
+.project {
+    background: #313131;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #333;
+    color: white;
+    
+    
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 40px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 90%;
+        padding-right: 20px;
+    }
+
+    .nav-right {
+        padding-right: 20px;
+        gap: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 20px;
+    }
+}
